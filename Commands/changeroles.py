@@ -29,7 +29,7 @@ async def changeroles(message, arguments):
     members = current_role.members
     for i in members:
         await i.add_roles(new_role)
-    await current_role.delete()
-    await message.channel.send('new role added, previous role removed')
+    
+    await message.channel.send('new role added, previous role can be removed')
     
     
